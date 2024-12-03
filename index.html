@@ -3,6 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      /* селектор */
+      /* . - означає,що ми будемо шукати елемент з класом */
+      /* qwe - назва класу за яким ви хочете знайти елемент */
+      /* {} - тіло нашого селектору куди ми записуємо наші стилі */
+      .qwe {
+        color: red;
+        background-color: black;
+        font-size: 28px;
+      }
+
+      .zxc {
+        font-size: 1000px;
+        color: aqua;
+        text-decoration: overline;
+      }
+      /* 1-й приорітет: займають інлайновиц спосіб підключення */
+      /* 2-й приорітет: вбудовані стилі */
+      /* 3-й приорітет: Стилі в окремому файлі (зовнішне підключення) */
+
+      .asd {
+      }
+      .zxc {
+      }
+      .vbn {
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -14,9 +43,16 @@
 
       <nav>
         <ul>
-          <li><a href="">Студія</a></li>
-          <li><a href="./qwe.html">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
+          <li>
+            <a
+              style="font-size: 28px; color: darkgrey; text-decoration: none"
+              class="zxc"
+              href=""
+              >Студія</a
+            >
+          </li>
+          <li><a class="qwe" href="./qwe.html">Портфоліо</a></li>
+          <li><a class="asd" href="">Контакти</a></li>
         </ul>
       </nav>
 
