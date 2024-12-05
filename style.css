@@ -1,5 +1,82 @@
+/* * - звертається до усіх тегів на сторінці */
+
+* {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 .asd {
   color: green;
   background-color: orchid;
   font-size: 30px;
+}
+/* ////
+/
+/
+/
+/
+/
+/
+/
+//
+/
+/
+/
+/
+/ */
+/* css правило */
+/* 2 частини 
+1 - .asd - вказуємо до якого тегу ми будемо підключати стилі
+2 -  - побажання щодо відображення стилів{
+  color: deepskyblue;
+  background-color: olivedrab;
+  font-size: 100px;
+}
+*/
+.asd {
+  color: deepskyblue;
+  background-color: olivedrab;
+  font-size: 100px;
+}
+/* . - селектор класу - дозволяє обирати елементи з атрибутом class */
+.tel {
+  /* color: red;
+  background-color: green; */
+}
+
+/* # - id  */
+
+#lux {
+}
+
+/* []  - селектор атрибуту - дозволяє обрати елемент за будь-яким атрибутом*/
+/* я шукаю атрибут href  у якого на початку записано http */
+[href="http"] {
+  color: red;
+}
+
+[href="https"] {
+  color: green;
+}
+
+body {
+}
+
+/* теговий селектор */
+p {
+  font-size: 100px;
+}
+a {
 }
