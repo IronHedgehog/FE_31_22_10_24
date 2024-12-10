@@ -1,3 +1,27 @@
+:root {
+  /* складники змінної
+  1  - Створення змінної (--)
+  2 - Вигадати назву (navedennia) - будь яке слово англ. літерами маленькими бажано без цифр
+  3 - двокрапка розділяє стоворенну змінну та значення (:)
+  4 - значення яке ви хочете зберегти
+  */
+
+  --main-heading: #ffffff;
+  --normal-text: #757575;
+
+  --navedennia: orchid;
+  --header-nav: #a3e4d7;
+  /* red green blue alpha-прозорість */
+  --zagolovokSection: #82c384;
+
+  --main-text: orchid;
+  /*
+  a3 - red 
+  e4 - green
+  d7 - blue
+  */
+}
+
 /* * - звертається до усіх тегів на сторінці */
 
 * {
@@ -9,7 +33,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
+  /*var - variable - змінна  */
+
+  color: var(--navedennia);
 }
 
 ul,
@@ -18,7 +44,7 @@ ol {
 }
 
 .asd {
-  color: green;
+  color: var(--navedennia);
   background-color: orchid;
   font-size: 30px;
 }
@@ -46,14 +72,14 @@ ol {
 }
 */
 .asd {
-  color: deepskyblue;
-  background-color: olivedrab;
+  color: var(--navedennia);
+  background-color: var(--main-text);
   font-size: 100px;
 }
 /* . - селектор класу - дозволяє обирати елементи з атрибутом class */
 .tel {
-  /* color: red;
-  background-color: green; */
+  color: var(--navedennia);
+  background-color: green;
 }
 
 /* # - id  */
@@ -64,11 +90,11 @@ ol {
 /* []  - селектор атрибуту - дозволяє обрати елемент за будь-яким атрибутом*/
 /* я шукаю атрибут href  у якого на початку записано http */
 [href="http"] {
-  color: red;
+  color: var(--navedennia);
 }
 
 [href="https"] {
-  color: green;
+  color: var(--navedennia);
 }
 
 body {
