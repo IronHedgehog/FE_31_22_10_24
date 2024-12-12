@@ -1,108 +1,29 @@
-:root {
-  /* складники змінної
-  1  - Створення змінної (--)
-  2 - Вигадати назву (navedennia) - будь яке слово англ. літерами маленькими бажано без цифр
-  3 - двокрапка розділяє стоворенну змінну та значення (:)
-  4 - значення яке ви хочете зберегти
-  */
-
-  --main-heading: #ffffff;
-  --normal-text: #757575;
-
-  --navedennia: orchid;
-  --header-nav: #a3e4d7;
-  /* red green blue alpha-прозорість */
-  --zagolovokSection: #82c384;
-
-  --main-text: orchid;
-  /*
-  a3 - red 
-  e4 - green
-  d7 - blue
-  */
+.heading {
+  color: limegreen;
 }
 
-/* * - звертається до усіх тегів на сторінці */
-
-* {
+.heading {
+  color: red;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /*var - variable - змінна  */
-
-  color: var(--navedennia);
+.heading {
+  font-size: 24px;
+  color: lightskyblue;
+}
+/* Правило каскадності - чим стиль нижче у коді тим більший у нього приорітет В ОДНАКОВИХ УМОВАХ */
+#head {
+  color: green;
+  font-size: 20px;
 }
 
-ul,
-ol {
-  list-style: none;
+/* important - дає найбільшу важливість */
+
+.heading3 {
+  color: mediumpurple;
+  font-size: 50px;
 }
 
-.asd {
-  color: var(--navedennia);
-  background-color: orchid;
-  font-size: 30px;
-}
-/* ////
-/
-/
-/
-/
-/
-/
-/
-//
-/
-/
-/
-/
-/ */
-/* css правило */
-/* 2 частини 
-1 - .asd - вказуємо до якого тегу ми будемо підключати стилі
-2 -  - побажання щодо відображення стилів{
-  color: deepskyblue;
-  background-color: olivedrab;
-  font-size: 100px;
-}
-*/
-.asd {
-  color: var(--navedennia);
-  background-color: var(--main-text);
-  font-size: 100px;
-}
-/* . - селектор класу - дозволяє обирати елементи з атрибутом class */
-.tel {
-  color: var(--navedennia);
-  background-color: green;
-}
-
-/* # - id  */
-
-#lux {
-}
-
-/* []  - селектор атрибуту - дозволяє обрати елемент за будь-яким атрибутом*/
-/* я шукаю атрибут href  у якого на початку записано http */
-[href="http"] {
-  color: var(--navedennia);
-}
-
-[href="https"] {
-  color: var(--navedennia);
-}
-
-body {
-}
-
-/* теговий селектор */
 p {
-  font-size: 100px;
-}
-a {
+  color: red !important;
+  font-size: 10px !important;
 }
