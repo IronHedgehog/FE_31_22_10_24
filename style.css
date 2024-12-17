@@ -27,3 +27,57 @@ p {
   color: red !important;
   font-size: 10px !important;
 }
+
+.button {
+  /* ширина */
+  width: 100px;
+  /* висота */
+  height: 20px;
+  /* колір фону */
+  background-color: red;
+}
+/* ефект наведення на кнопку */
+
+/* active,hover - це одне й те саме за одним винятком, hober - для пристроїв з курсором,active - для телефоних пристроїв щоб показати ефект наведеення */
+.button:active,
+.button:hover {
+  cursor: pointer;
+
+  background-color: blue;
+  color: yellow;
+}
+
+#input {
+  background-color: fuchsia;
+}
+
+#input:focus {
+  /* outline - обводка */
+  /*5px - розмір  */
+  /* solid - суцільна лінія */
+  /* green - колір */
+  outline: 5px solid green;
+  /* outline-style: dotted; */
+}
+
+.disabled-button:disabled {
+  background-color: red;
+}
+
+button[disabled] {
+  background-color: red;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+.li {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* margin-left: 20px; */
+}
+/* not(не) last-child - остання дитина */
+.li:not(:first-child) {
+  margin-left: 20px;
+}
