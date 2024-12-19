@@ -24,8 +24,8 @@
 }
 
 p {
-  color: red !important;
-  font-size: 10px !important;
+  /* color: red !important; */
+  /* font-size: 10px !important; */
 }
 
 .button {
@@ -68,7 +68,7 @@ button[disabled] {
   background-color: red;
 }
 ul {
-  display: flex;
+  /* display: flex; */
   list-style: none;
 }
 .li {
@@ -81,3 +81,56 @@ ul {
 .li:not(:first-child) {
   margin-left: 20px;
 }
+
+p {
+  /* height: 900px; */
+}
+
+body {
+  /* font-size: - розмір буковок */
+
+  font-size: 50px;
+  color: blue;
+  font-weight: 900;
+  /* Вирівнюванням тексту по ширині */
+  text-align: center;
+
+  border: 5px solid red;
+
+  /* display: flex; */
+  /* ширину */
+  /* justify-content: ; */
+  /* відповідальний за рівнняня по висоті */
+  /* align-items: ; */
+}
+
+/* inherit - наслідувати примусово */
+.ul {
+  border: inherit;
+}
+/* even - парні */
+.ulka li:nth-child(even) {
+  background-color: lightcoral;
+}
+/* odd - не парні */
+.ulka li:nth-child(odd) {
+  background-color: slateblue;
+}
+/* rожен 3-й елемент */
+.ulka li:nth-child(3n) {
+  background-color: olive;
+}
+/* всі елменти почи наючи з другого */
+.ulka li:nth-child(n + 2) {
+  background-color: red;
+}
+
+.ulka li:nth-child(-n + 2) {
+  background-color: lightpink;
+}
+
+/* #id .class {
+}
+
+[type="button"] {
+} */
