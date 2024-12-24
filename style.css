@@ -1,136 +1,34 @@
-.heading {
-  color: limegreen;
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./fonts/Roboto-Regular.ttf") format("ttf"),
+    url("./fonts/Roboto-Medium.ttf") format("ttf");
 }
 
-.heading {
-  color: red;
-}
-
-.heading {
-  font-size: 24px;
-  color: lightskyblue;
-}
-/* Правило каскадності - чим стиль нижче у коді тим більший у нього приорітет В ОДНАКОВИХ УМОВАХ */
-#head {
-  color: green;
-  font-size: 20px;
-}
-
-/* important - дає найбільшу важливість */
-
-.heading3 {
-  color: mediumpurple;
-  font-size: 50px;
-}
-
-p {
-  /* color: red !important; */
-  /* font-size: 10px !important; */
-}
-
-.button {
-  /* ширина */
-  width: 100px;
-  /* висота */
-  height: 20px;
-  /* колір фону */
+/* .monday td:first-child {
   background-color: red;
 }
-/* ефект наведення на кнопку */
 
-/* active,hover - це одне й те саме за одним винятком, hober - для пристроїв з курсором,active - для телефоних пристроїв щоб показати ефект наведеення */
-.button:active,
-.button:hover {
-  cursor: pointer;
+.monday td:last-child {
+  background-color: green;
+}
 
+.monday td:nth-child(even) {
   background-color: blue;
-  color: yellow;
 }
 
-#input {
-  background-color: fuchsia;
+.monday td:nth-child(odd) {
+  background-color: brown;
 }
 
-#input:focus {
-  /* outline - обводка */
-  /*5px - розмір  */
-  /* solid - суцільна лінія */
-  /* green - колір */
-  outline: 5px solid green;
-  /* outline-style: dotted; */
-}
-
-.disabled-button:disabled {
-  background-color: red;
-}
-
-button[disabled] {
-  background-color: red;
-}
-ul {
-  /* display: flex; */
-  list-style: none;
-}
-.li {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  /* margin-left: 20px; */
-}
-/* not(не) last-child - остання дитина */
-.li:not(:first-child) {
-  margin-left: 20px;
-}
-
-p {
-  /* height: 900px; */
-}
-
-body {
-  /* font-size: - розмір буковок */
-
-  font-size: 50px;
-  color: blue;
-  font-weight: 900;
-  /* Вирівнюванням тексту по ширині */
-  text-align: center;
-
-  border: 5px solid red;
-
-  /* display: flex; */
-  /* ширину */
-  /* justify-content: ; */
-  /* відповідальний за рівнняня по висоті */
-  /* align-items: ; */
-}
-
-/* inherit - наслідувати примусово */
-.ul {
-  border: inherit;
-}
-/* even - парні */
-.ulka li:nth-child(even) {
-  background-color: lightcoral;
-}
-/* odd - не парні */
-.ulka li:nth-child(odd) {
-  background-color: slateblue;
-}
-/* rожен 3-й елемент */
-.ulka li:nth-child(3n) {
-  background-color: olive;
-}
-/* всі елменти почи наючи з другого */
-.ulka li:nth-child(n + 2) {
-  background-color: red;
-}
-
-.ulka li:nth-child(-n + 2) {
-  background-color: lightpink;
-}
-
-/* #id .class {
-}
-
-[type="button"] {
+.monday td:first-child:hover {
+  background-color: lime;
 } */
+
+td {
+  /* font-family: - підключення сімейства шрифту до цього елементу   */
+  font-family: "Roboto", serif;
+  /* font-style - нахресленя шрифту */
+  font-style: normal;
+  /* font-weight - жирність шрифту */
+  font-weight: 400;
+}
