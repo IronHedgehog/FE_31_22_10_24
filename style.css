@@ -23,6 +23,23 @@ td {
   font-family: "Montserrat", serif;
   /* font-style - нахресленя шрифту */
   font-style: normal;
-  /* font-weight - жирність шрифту */
+  /* font-weight - жирність,насиченість шрифту */
   font-weight: 400;
+}
+
+.p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  /*line-height - міжрядковий інтервал  */
+  line-height: 30px;
+
+  line-height: 41px;
+
+  text-align: center;
+  /*  */
+  text-transform: uppercase;
+
+  /* color: #fed136; */
 }
