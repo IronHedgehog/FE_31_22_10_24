@@ -2,3 +2,49 @@
   margin: 0;
   padding: 0;
 } */
+
+body {
+  /* display: flex; */
+}
+
+* {
+  /* box-sizing - це властивість яка контролює розподіл ширини та висоти */
+  /* Завжди має бути бордер бокс */
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  border-width: 5px;
+  border-style: dotted;
+  border-color: orange;
+
+  border: 5px dotted orange;
+
+  border-radius: 5px;
+}
+
+.box-img {
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+
+.box2 {
+  /*
+   width: 100px;
+  height: 100px; може бути тільки у блокових елементів  */
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-left: 20px;
+  /* margin-top: 20px; */
+}
