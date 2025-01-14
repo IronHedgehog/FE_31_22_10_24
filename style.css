@@ -1,50 +1,43 @@
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
-body {
-  /* display: flex; */
+.container {
+  /* ширина контейнеру */
+  width: 1200px;
+  /* margin - виконується за годиниковою стрілкою */
+  /* 
+  margin-top: 0 ;
+  margin-bottom:  0;
+  margin-left: auto;
+  margin-right: auto;
+  */
+  /* центрування */
+  /* 0 - margin-top та margin-bottom */
+  /* auto - margin-left та  margin-right:  */
+  margin: 0 auto;
+  /* внутрішній відступ для того щоб наш контент не приліпав до країв екрану */
+  padding: 0 15px;
 }
 
-* {
-  /* box-sizing - це властивість яка контролює розподіл ширини та висоти */
-  /* Завжди має бути бордер бокс */
-  box-sizing: border-box;
+.container {
+  /* ширина контейнеру */
+  width: 964px;
+  /* margin - виконується за годиниковою стрілкою */
+  /* 
+  margin-top: 0 ;
+  margin-bottom:  0;
+  margin-left: auto;
+  margin-right: auto;
+  */
+  /* центрування */
+  /* 0 - margin-top та margin-bottom */
+  /* auto - margin-left та  margin-right:  */
+  margin: 0 auto;
+  /* внутрішній відступ для того щоб наш контент не приліпав до країв екрану */
+  padding: 0 15px;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  padding: 20px;
-  padding-left: 10px;
-  padding-right: 20px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-
-  border-width: 5px;
-  border-style: dotted;
-  border-color: orange;
-
-  border: 5px dotted orange;
-
-  border-radius: 5px;
+.img {
+  text-align: center;
 }
 
-.box-img {
-  display: block;
-  height: 40px;
-  width: 100%;
-}
-
-.box2 {
-  /*
-   width: 100px;
-  height: 100px; може бути тільки у блокових елементів  */
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  margin-left: 20px;
-  /* margin-top: 20px; */
+p {
+  text-align: center;
 }
