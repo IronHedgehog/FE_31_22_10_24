@@ -1,70 +1,7 @@
-body {
-  font-family: "Poppins", serif;
-}
-
-.container {
-  /* ширина контейнеру */
-  width: 1200px;
-  /* margin - виконується за годиниковою стрілкою */
-  /* 
-  margin-top: 0 ;
-  margin-bottom:  0;
-  margin-left: auto;
-  margin-right: auto;
-  */
-  /* центрування */
-  /* 0 - margin-top та margin-bottom */
-  /* auto - margin-left та  margin-right:  */
-  margin: 0 auto;
-  /* внутрішній відступ для того щоб наш контент не приліпав до країв екрану */
-  padding: 0 15px;
-}
-
-.container {
-  /* ширина контейнеру */
-  width: 964px;
-  /* margin - виконується за годиниковою стрілкою */
-  /* 
-  margin-top: 0 ;
-  margin-bottom:  0;
-  margin-left: auto;
-  margin-right: auto;
-  */
-  /* центрування */
-  /* 0 - margin-top та margin-bottom */
-  /* auto - margin-left та  margin-right:  */
-  margin: 0 auto;
-  /* внутрішній відступ для того щоб наш контент не приліпав до країв екрану */
-  padding: 0 15px;
-}
-
-.img {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-}
-
-.lorem {
-  background-color: red;
-}
-
-.p {
-  padding-top: 71px;
-  font-size: 40px;
-  /* lineheight / fontsize */
-  line-height: calc(40 / 36);
-  padding-bottom: 94px;
-}
-
-.pp {
-  color: gainsboro;
-}
-
-.box-box {
-  width: 300px;
-  height: 300px;
-  padding: 10px 20px 30px 40px;
-  margin: 40px 30px 20px 10px;
+.team-list {
+  /* Батьківський елемент каже дитячим "встаньте в рядочок" */
+  display: flex;
+  /* дозволяє керувати осями flexbox(поставити у стовпчик або у  рядок) */
+  flex-direction: column-reverse;
+  list-style: none;
 }

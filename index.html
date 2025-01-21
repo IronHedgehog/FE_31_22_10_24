@@ -3,64 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
-
     <link rel="stylesheet" href="./reset.css" />
-
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header></header>
     <main>
-      <section class="lorem">
+      <!-- flex-box - дозволяє ставити елементи у ряд -->
+      <!--  -->
+      <section class="our-team">
         <div class="container">
-          <img class="img" src="./img/box3.jpg" alt="" />
-          <p class="p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-            maiores saepe beatae iusto necessitatibus qui, quo labore fugit
-            inventore, quae sapiente adipisci praesentium quasi maxime aliquam
-            autem obcaecati ipsum repellat. Dolorem tempore doloremque eaque
-            reprehenderit eveniet iste itaque voluptates culpa in necessitatibus
-            veritatis fugiat quidem laboriosam quibusdam unde autem tempora
-            debitis quo, expedita reiciendis ducimus saepe eligendi quisquam
-            ullam? Expedita ipsa unde praesentium reiciendis consequuntur esse
-            minus aliquid nihil similique sint error necessitatibus molestias
-            sunt, impedit possimus maiores, eum in vitae voluptatum facere
-            nobis! Cupiditate labore dolorem rerum doloribus dolores. Deleniti
-            sunt maxime corrupti ab quos! Quos cum non commodi.
-          </p>
+          <!-- ul - Батьківський елемет тегу li (flex-container) -->
+          <ul class="team-list">
+            <!-- li -дитячий елеменнт тегу ul (flex-item) -->
+            <li class="team-member">
+              <img class="team-photo" src="./img/box3.jpg" alt="" />
+              <p class="name">Artem</p>
+              <p class="job">Dev</p>
+              <p>1</p>
+            </li>
+            <li class="team-member">
+              <img class="team-photo" src="./img/box3.jpg" alt="" />
+              <p class="name">Petro</p>
+              <p class="job">Dev</p>
+            </li>
+            <li class="team-member">
+              <img class="team-photo" src="./img/box3.jpg" alt="" />
+              <p class="name">Anton</p>
+              <p class="job">Dev</p>
+            </li>
+            <li class="team-member">
+              <img class="team-photo" src="./img/box3.jpg" alt="" />
+              <p class="name">Ivan</p>
+              <p class="job">Dev</p>
+              <p>4</p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container">
-        <p class="pp">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          excepturi aut, maiores reiciendis ratione fuga id ad libero aliquam
-          fugiat modi accusantium, consequuntur asperiores eaque nostrum. Magnam
-          natus quasi molestias.
-        </p>
-        <div class="box-box">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam beatae
-          temporibus, aliquam, culpa alias reprehenderit sunt quidem maiores,
-          harum voluptatem repellendus eaque quos rerum omnis amet officia!
-          Asperiores, sed omnis.
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
