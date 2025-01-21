@@ -52,6 +52,9 @@ p {
 
 .p {
   padding-top: 71px;
+  font-size: 40px;
+  /* lineheight / fontsize */
+  line-height: calc(40 / 36);
   padding-bottom: 94px;
 }
 
