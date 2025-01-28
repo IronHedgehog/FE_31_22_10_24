@@ -1,12 +1,13 @@
 .team-list {
-  height: 100vh;
+  /* дали висоту розміром у весь наш екран */
+  height: 3000px;
   /* Батьківський елемент каже дитячим "встаньте в рядочок" */
   /* flex- гнучкий */
   display: flex;
   /* дозволяє керувати осями flexbox(поставити у стовпчик або у  рядок) */
   /* direction - напрямок */
   flex-direction: column;
-  /*  */
+
   flex-direction: column-reverse;
   /* row - значення за замовчуванням */
   flex-direction: row;
@@ -17,12 +18,21 @@
   /* Вирівнювання по ширині - однакові відступи між елементами */
   justify-content: space-evenly;
   /*align-items: - вирівнювання по висоті  */
+  /* використовувати в тому випадку якщо у вас один рядок */
   align-items: center;
+  /* використовувати коли у вас більше ніж один рядок */
+  align-content: normal;
 
   flex-wrap: wrap;
 
   list-style: none;
 }
+
+/* @media screen and (max-width: 767px) {
+  .team-list {
+    flex-direction: column;
+  }
+} */
 
 .team-photo {
   /* width: 100px;
