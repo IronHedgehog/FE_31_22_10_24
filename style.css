@@ -10,7 +10,7 @@ body {
 * {
   /* box-sizing - це властивість яка контролює розподіл ширини та висоти */
   /* Завжди має бути бордер бокс */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .box {

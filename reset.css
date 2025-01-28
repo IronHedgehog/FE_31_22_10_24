@@ -5,3 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.test_img {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  border: 10px solid red;
+}
