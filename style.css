@@ -1,44 +1,15 @@
-.team-list {
-  /* дали висоту розміром у весь наш екран */
-  height: 3000px;
-  /* Батьківський елемент каже дитячим "встаньте в рядочок" */
-  /* flex- гнучкий */
-  display: flex;
-  /* дозволяє керувати осями flexbox(поставити у стовпчик або у  рядок) */
-  /* direction - напрямок */
-  flex-direction: column;
-
-  flex-direction: column-reverse;
-  /* row - значення за замовчуванням */
-  flex-direction: row;
-
-  flex-direction: row-reverse;
-  /* Вирівнювання по ширині - по середині */
-  justify-content: center;
-  /* Вирівнювання по ширині - однакові відступи між елементами */
-  justify-content: space-evenly;
-  /*align-items: - вирівнювання по висоті  */
-  /* використовувати в тому випадку якщо у вас один рядок */
-  align-items: center;
-  /* використовувати коли у вас більше ніж один рядок */
-  align-content: normal;
-
-  flex-wrap: wrap;
-
+.list {
   list-style: none;
-}
+  display: grid;
+  /*   grid-template-columns - кількість колонок */
+  /* repeat - повторити */
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-rows - кількість рядків   */
+  grid-template-rows: repeat(3, 1fr);
+  /*grid-column-gap - відступ між колонками  */
+  grid-column-gap: 30px;
+  /*grid-row-gap: - відстань між рядками  */
+  grid-row-gap: 30px;
 
-/* @media screen and (max-width: 767px) {
-  .team-list {
-    flex-direction: column;
-  }
-} */
-
-.team-photo {
-  /* width: 100px;
-  height: 100px; */
-}
-
-.team-list li {
-  background-color: green;
+  justify-items: center;
 }
