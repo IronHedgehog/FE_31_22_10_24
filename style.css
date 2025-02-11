@@ -1,54 +1,24 @@
-.list {
-  list-style: none;
-  display: grid;
-  /*   grid-template-columns - кількість колонок */
-  /* repeat - повторити */
-  grid-template-columns: repeat(3, 1fr);
-  /*grid-template-rows - кількість рядків   */
-  grid-template-rows: repeat(3, 1fr);
-  /*grid-column-gap - відступ між колонками  */
-  grid-column-gap: 30px;
-  /*grid-row-gap: - відстань між рядками  */
-  grid-row-gap: 30px;
+/* px - абсолютні велечини які ніколи не змінюються */
 
-  justify-items: center;
+/* % - залежать від батьківського елементу */
+html {
+  font-size: 36px;
 }
 
-.list1 {
-  display: flex;
-  /* flex-direction: column; */
-  list-style: none;
-  align-items: center;
-  height: 1000px;
-  /* width: 500px; */
-}
-
-.list-item1:first-child {
-  flex-basis: 100px;
-  max-width: 120px;
-  min-width: 100px;
-  /* width: 200px; */
-  flex-grow: 1;
-  background-color: aliceblue;
-  align-self: flex-start;
-  order: 10;
-}
-.list-item1:nth-child(2) {
-  flex-shrink: 5;
-  flex-grow: 2;
-  background-color: black;
-  align-self: flex-end;
-  order: 20;
-}
-.list-item1:last-child {
-  flex-grow: 1;
-  align-self: stretch;
+.container {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  padding: 0 15px;
   background-color: red;
-  order: -1;
+  font-size: 100px;
 }
-.list-item1:nth-child(4) {
-  flex-grow: 1;
-  flex: 3 3 300px;
-  background-color: blueviolet;
-  order: -2;
+/* em - відносна одиниця, відноситься до такого ж значення батьковського елемента */
+.p {
+  font-size: 3em;
+}
+
+/* rem - відносна одиниця, відноситься до такого ж значення основного елементу(html тег) елемента */
+.p1 {
+  font-size: 2.4rem;
 }
