@@ -1,0 +1,76 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  justify-content: center;
+  justify-items: center;
+}
+/*::after -- слугують для відтворення декоративних елементів  */
+.list-item::after {
+  content: "";
+  display: block;
+
+  width: 1000px;
+  height: 1000px;
+
+  background-color: aqua;
+
+  background-image: url("./img/diagram\ 1.png"),
+    url("https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg"),
+    url("./img/diagram\ 1.png"),
+    url("https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg"),
+    url("https://cakeshop.com.ua/images/AcpSe7kFpmzMfgJUwhyXbNbja_gwkleunua5ZVM9jTQ/h:5000/bG9jYWw/6Ly8vY2FrZXNob3AuY29tLnVhL3B1YmxpY19odG1sL3N0b3JhZ2UvYXBwL3B1YmxpYy9pbWcvcHJvZHVjdC81NzEzXzEuanBn");
+
+  background-repeat: repeat-y, repeat-x, repeat-y, repeat-x, no-repeat;
+  background-position: left, top, right, bottom, center;
+  background-size: 100px 100px, 200px 200px, 100px 100px, 200px 200px,
+    1000px 1000px;
+}
+
+body {
+  /* background-color: black; */
+}
+
+.diagram::after {
+  background-image: url("./img/box3.jpg");
+}
+
+/* https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg */
+
+.list-item::before {
+  content: "";
+  display: block;
+
+  width: 200px;
+  height: 100px;
+
+  background-color: red;
+}
+
+/* ::selection -  */
+.p::selection {
+  background-color: blue;
+  color: yellow;
+}
+
+.p::first-letter {
+  font-size: 2rem;
+  color: brown;
+  /* background-color: red; */
+}
+
+.p::first-line {
+  font-size: 20px;
+  color: red;
+  /* background-color: red; */
+}
