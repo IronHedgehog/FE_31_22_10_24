@@ -1,24 +1,27 @@
-/* px - абсолютні велечини які ніколи не змінюються */
+.body {
+  width: 1000px;
+  height: 1000px;
+  background: rgb(13, 103, 94);
+  background: radial-gradient(
+    circle,
+    rgba(13, 103, 94, 1) 19%,
+    rgba(31, 175, 49, 1) 36%,
+    rgba(35, 53, 198, 1) 44%,
+    rgba(221, 21, 94, 1) 52%,
+    rgba(255, 229, 0, 1) 63%,
+    rgba(255, 0, 0, 1) 99%
+  );
 
-/* % - залежать від батьківського елементу */
-html {
-  font-size: 36px;
-}
+  /* card bg */
 
-.container {
-  width: 80%;
-  height: 500px;
-  margin: 0 auto;
-  padding: 0 15px;
-  background-color: red;
-  font-size: 100px;
-}
-/* em - відносна одиниця, відноситься до такого ж значення батьковського елемента */
-.p {
-  font-size: 3em;
-}
+  position: absolute;
+  width: 270px;
+  height: 428px;
+  left: 215px;
+  top: 1782px;
 
-/* rem - відносна одиниця, відноситься до такого ж значення основного елементу(html тег) елемента */
-.p1 {
-  font-size: 2.4rem;
+  background: #ffffff;
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 2px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
