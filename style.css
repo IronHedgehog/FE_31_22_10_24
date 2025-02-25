@@ -1,27 +1,29 @@
-.body {
-  width: 1000px;
-  height: 1000px;
-  background: rgb(13, 103, 94);
-  background: radial-gradient(
-    circle,
-    rgba(13, 103, 94, 1) 19%,
-    rgba(31, 175, 49, 1) 36%,
-    rgba(35, 53, 198, 1) 44%,
-    rgba(221, 21, 94, 1) 52%,
-    rgba(255, 229, 0, 1) 63%,
-    rgba(255, 0, 0, 1) 99%
-  );
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing:  -   */
+  box-sizing: border-box;
+}
 
-  /* card bg */
+body {
+  display: flex;
+  /* vh - viewPort - h - height */
+  height: 100vh;
+  /* justify-content - дозволяє вирівнювати твій контент по ширині  */
+  justify-content: center;
+  /* align-items - дозволяє вирівнювати твій контент по висоті  */
+  align-items: center;
+}
 
-  position: absolute;
-  width: 270px;
-  height: 428px;
-  left: 215px;
-  top: 1782px;
-
-  background: #ffffff;
-  /* material shadow v1 */
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 2px 4px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+.bg {
+  text-align: center;
+  width: 100vw;
+  /* padding: 100px; */
+  height: 100vh;
+  background-color: green;
+  background-image: url("./img/Patrick_star-4854.webp"),
+    url("./img/5713_1.webp");
+  background-repeat: no-repeat;
+  background-size: 100px 100px, cover;
+  background-position: top 30% left 20%, top 20% left 50%;
 }
