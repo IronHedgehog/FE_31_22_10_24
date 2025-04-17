@@ -21,3 +21,10 @@
   /* stroke - обводка */
   stroke: aqua;
 }
+
+.svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  stroke: red;
+}
