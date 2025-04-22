@@ -28,3 +28,29 @@
   fill: #afb1b8;
   stroke: red;
 }
+
+.text {
+  font-family: cursive;
+  font-style: italic;
+}
+
+.icon-google-plus-square {
+  color: red;
+  font-size: 50px;
+}
+
+.button {
+  width: 200px;
+  height: 70px;
+  padding: 20px;
+  background-color: midnightblue;
+  color: red;
+  font-family: cursive;
+  font-size: 20px;
+  transition: background-color 1s linear, color 1s linear;
+}
+
+.button:hover {
+  background-color: tomato;
+  color: black;
+}
