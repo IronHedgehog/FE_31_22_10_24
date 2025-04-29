@@ -54,3 +54,6 @@
   background-color: tomato;
   color: black;
 }
+/* color- стилює тільки шрифт */
+/* fill - Колір внутрішнього вмісту svg  */
+/* stroke - колір обводки  svg*/
