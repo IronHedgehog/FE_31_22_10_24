@@ -1,59 +1,50 @@
-.list {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* .special {
-  width: 20px;
-  height: 20px;
-  background-color: red;
-} */
-.icon {
-  width: 50px;
-  height: 50px;
-  /* background-color: red; */
-  /* color: red; */
-  /* fill - колір ліній */
-  fill: red;
-  /* stroke - обводка */
-  stroke: aqua;
+body {
+  height: 10000px;
 }
 
-.svg {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-  stroke: red;
-}
-
-.text {
-  font-family: cursive;
-  font-style: italic;
-}
-
-.icon-google-plus-square {
-  color: red;
-  font-size: 50px;
-}
-
-.button {
+.position-static {
   width: 200px;
-  height: 70px;
-  padding: 20px;
-  background-color: midnightblue;
-  color: red;
-  font-family: cursive;
-  font-size: 20px;
-  transition: background-color 1s linear, color 1s linear;
+  height: 200px;
+  background-color: green;
+  /* position: static; - мають усі елементи за замовчуванням */
+  position: relative;
+  top: 200px;
+  z-index: -20;
+}
+/*relative - відносний  */
+.position-relative {
+  width: 200px;
+  height: 200px;
+  background-color: purple;
+  position: relative;
+  /* жодна з властивостей нижче не працює без позиціонування відмінного від static; */
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
-.button:hover {
-  background-color: tomato;
-  color: black;
+.position-absolute {
+  /* width: 200px;
+  height: 200px; */
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
-/* color- стилює тільки шрифт */
-/* fill - Колір внутрішнього вмісту svg  */
-/* stroke - колір обводки  svg*/
+
+.position-fixed {
+  width: 100vw;
+  height: 100px;
+  background-color: red;
+
+  position: fixed;
+  top: 0;
+}
