@@ -9,7 +9,7 @@
   <body>
     <header></header>
     <main>
-      <button>Відкрити модалку</button>
+      <button data-modal-open>Відкрити модалку</button>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia hic,
         inventore, blanditiis unde libero quaerat voluptatibus maxime et, rerum
@@ -49,9 +49,11 @@
     <footer></footer>
   </body>
 
-  <div class="backdrop is-hidden">
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <button data-modal-close>X</button>
       <h1>Hallo world</h1>
     </div>
   </div>
+  <script src="./js/modal.js"></script>
 </html>
