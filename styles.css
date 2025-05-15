@@ -25,7 +25,8 @@
   position: fixed;
   right: 0;
   top: 0;
-  transform: translateX(100%);
+  /* opacity: 0; */
+  transform: translateX(90%);
   transition: transform 0.3s ease;
 }
 
@@ -51,8 +52,27 @@
   text-decoration: none;
 }
 
-.hover-svg:hover .mobile-menu {
-  transform: translateX(-100%);
+.mobile-menu:hover {
+  transform: translateX(0);
   /* background-color: red;
   cursor: pointer; */
+}
+
+.ul {
+}
+
+.li {
+  width: 300px;
+
+  border-radius: 20px;
+  border: 2px solid green;
+  overflow: hidden;
+}
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* transform: translateX(100%); */
+  /* border-radius: 20px;
+  border: 2px solid green; */
 }
