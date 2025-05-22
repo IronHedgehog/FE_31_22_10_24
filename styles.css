@@ -21,3 +21,21 @@
   background-color: rgb(216, 130, 19);
   transform: skew(10deg, 10deg);
 }
+
+.div4 {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  padding: 20px;
+}
+
+.div10 {
+  width: 300px;
+  height: 300px;
+  background-color: navy;
+  transition: transform 0.3s linear;
+}
+
+.div10:hover {
+  transform: translateX(100%);
+}
