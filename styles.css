@@ -4,38 +4,25 @@
   box-sizing: border-box;
 }
 
-.box {
+.keyframesdiv {
   width: 200px;
   height: 200px;
-  background-color: red;
-  transition: background-color 5s cubic-bezier(0.02, 1.6, 0.92, -0.67);
+  background-color: mediumspringgreen;
+
+  animation-name: animation;
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-.box:hover {
-  background-color: green;
-}
-
-.box3 {
-  width: 200px;
-  height: 200px;
-  background-color: rgb(216, 130, 19);
-  transform: skew(10deg, 10deg);
-}
-
-.div4 {
-  width: 400px;
-  height: 400px;
-  background-color: black;
-  padding: 20px;
-}
-
-.div10 {
-  width: 300px;
-  height: 300px;
-  background-color: navy;
-  transition: transform 0.3s;
-}
-
-.div10:hover {
-  transform: translateX(100%);
+@keyframes animation {
+  from {
+    width: 200px;
+    height: 200px;
+  }
+  to {
+    width: 500px;
+    height: 300px;
+  }
 }
