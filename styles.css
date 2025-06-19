@@ -1,28 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --y: #ffff00;
+  --main-text: #ffffff;
 }
 
-.keyframesdiv {
-  width: 200px;
-  height: 200px;
-  background-color: mediumspringgreen;
-
-  animation-name: animation;
-  animation-duration: 500ms;
-  animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes animation {
-  from {
-    width: 200px;
-    height: 200px;
-  }
-  to {
-    width: 500px;
-    height: 300px;
-  }
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: var(--y);
+  color: var(--main-text);
 }

@@ -1,0 +1,34 @@
+.header {
+  width: 100%;
+  background-color: red;
+}
+
+.asd {
+  color: red;
+}
+
+.qwe {
+  width: 200px;
+  background-color: red;
+}
+
+.footer {
+  background-color: red;
+}
+
+.test {
+  background-color: red;
+  color: pink;
+  width: 200px;
+  height: 200px;
+}
+.test:hover {
+  background-color: black;
+}
+.test-heading {
+  color: red;
+  font-size: 50px;
+}
+.test-list {
+  list-style: none;
+}

@@ -1,0 +1,35 @@
+.footer {
+  background-color: $newVar;
+}
+.asdqwe {
+}
+
+.test {
+  background-color: $newVar;
+  color: $sale-main-text;
+  width: 200px;
+  height: 200px;
+
+  // & = test(назві класу у який ви вкладаєте css правило)
+  &:hover {
+    background-color: black;
+  }
+
+  &-heading {
+    color: red;
+    font-size: 50px;
+  }
+  &-list {
+    list-style: none;
+  }
+  &-item {
+  }
+}
+
+// .test-heading{
+
+// }
+
+// .test:hover {
+//   background-color: black;
+// }
