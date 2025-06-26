@@ -1,0 +1,23 @@
+.button {
+  width: 200px;
+  height: 70px;
+  background-color: brown;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  //   & === .button
+  &--ok {
+    @extend .button;
+    background-color: green;
+  }
+
+  &--notOk {
+    @extend .button;
+    background-color: red;
+  }
+}
+
+// .button--ok {
+//   // @extend - Розширити, збільшити
+// }

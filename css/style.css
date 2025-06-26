@@ -1,3 +1,29 @@
+.about-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button, .button--notOk, .button--ok {
+  width: 200px;
+  height: 70px;
+  background-color: brown;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+.button--ok {
+  background-color: green;
+}
+.button--notOk {
+  background-color: red;
+}
+
+.about-list {
+  height: 100vh;
+}
+
 .header {
   width: 100%;
   background-color: red;
@@ -10,25 +36,4 @@
 .qwe {
   width: 200px;
   background-color: red;
-}
-
-.footer {
-  background-color: red;
-}
-
-.test {
-  background-color: red;
-  color: pink;
-  width: 200px;
-  height: 200px;
-}
-.test:hover {
-  background-color: black;
-}
-.test-heading {
-  color: red;
-  font-size: 50px;
-}
-.test-list {
-  list-style: none;
 }
