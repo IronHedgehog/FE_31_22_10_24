@@ -1,3 +1,11 @@
 .asd {
   color: $newVar;
 }
+
+.section-text {
+  @include main-text(14px, "Roboto", 400, #757575);
+}
+
+.section2-text {
+  @include main-text(16px, "Inter", 600, red);
+}

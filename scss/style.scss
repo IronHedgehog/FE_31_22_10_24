@@ -6,6 +6,7 @@
 @import "./utils/placeholders";
 @import "./components/buttons";
 @import "./components/about";
-
+@import "./utils/mixins";
+@import "./components/box";
 @import "./utils/vars", "./components/header", "./components/first_section",
   "./components/second_section", "./components/third_section";
