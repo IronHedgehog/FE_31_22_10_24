@@ -10,6 +10,63 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="box">BOX</div>
+    <header>
+      <div class="header container">
+        <a href="#" class="header__logo">
+          <span class="header__logo--blue">Web</span
+          ><span class="header__logo--dark">Studio</span>
+        </a>
+        <button class="menu-button" id="menu-toggle">
+          OPEN
+          <svg class="menu-burger">
+            <use></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu" id="mobile-menu">
+          <button id="close-menu">
+            <svg class="close-menu-button">
+              <use href="">X</use>
+            </svg>
+          </button>
+          <ul class="nav-mobile-list">
+            <li class="nav-mobile-item">
+              <a href="" class="nav-mobile-link">1</a>
+            </li>
+            <li class="nav-mobile-item">
+              <a href="" class="nav-mobile-link">2</a>
+            </li>
+            <li class="nav-mobile-item">
+              <a href="" class="nav-mobile-link">3</a>
+            </li>
+            <li class="nav-mobile-item">
+              <a href="" class="nav-mobile-link">4</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-div">
+          <nav class="header__nav">
+            <a href="#" class="active">Студія</a>
+            <a href="./portfolio.html">Портфоліо</a>
+            <a href="#">Контакти</a>
+          </nav>
+
+          <div class="header__contacts">
+            <a href="mailto:info@devstudio.com">
+              <svg width="16" height="12">
+                <use href="assets/images/symbol-defs.#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a href="tel:+380961111111">
+              <svg width="10" height="16">
+                <use href="assets/images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
