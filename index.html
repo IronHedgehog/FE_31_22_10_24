@@ -18,6 +18,34 @@
       alt=""
     />
 
+    <picture>
+      <source
+        srcset="
+          ./assets/img/img1x-phone.jpg 1x,
+          ./assets/img/img2x-phone.jpg 2x,
+          ./assets/img/img3x-phone.jpg 3x
+        "
+        media="(max-width:767px)"
+      />
+      <source
+        srcset="
+          ./assets/img/img1x-tabl.jpg 1x,
+          ./assets/img/img2x-tabl.jpg 2x,
+          ./assets/img/img3x-tabl.jpg 3x
+        "
+        media="(max-width:1199px)"
+      />
+      <source
+        srcset="
+          ./assets/img/img1x-desk.jpg 1x,
+          ./assets/img/img2x-desk.jpg 2x,
+          ./assets/img/img3x-desk.jpg 3x
+        "
+        media="(min-width:1200px)"
+      />
+      <img src="./assets/img/img3x-mobile.jpg" alt="" />
+    </picture>
+
     <!-- <img src="./assets/img/mate3x.webp" alt="" />
     <img class="img" src="./assets/img/mate2x.webp" alt="" />
     <img class="img" src="./assets/img/mate3x.webp" alt="" /> -->
